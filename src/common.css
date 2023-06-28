@@ -1,0 +1,58 @@
+.messengerPage {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+.messengerPage > div {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chatBox {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.chatBox > div {
+  padding: 5px;
+}
+.profileBox {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.profileBox > div {
+  padding: 5px;
+}
+.chatTitle {
+  display: flex;
+  flex-direction: row;
+}
+.chatTitle > div {
+  padding: 3px;
+}
+.chatListBox {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+}
+.chatContents {
+  width: 60vw;
+}
+.chatText {
+  background-color: #fff;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.chatBoxRight{
+    
+}
