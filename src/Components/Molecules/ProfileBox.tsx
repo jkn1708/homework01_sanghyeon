@@ -1,10 +1,7 @@
 import React from "react";
+import { IProfileBox } from "../../mockData";
 
-export interface IProfileBox {
-  id?: string;
-  imgSrc?: string;
-  name?: string;
-}
+
 
 function ProfileBox(props: IProfileBox) {
   const { imgSrc, name } = props;

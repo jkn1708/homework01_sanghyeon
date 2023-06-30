@@ -5,14 +5,26 @@ interface IIconBtn {
   iconSrc?: string;
   linkPath?: string;
   onClickFn?: any;
+  toggle?:boolean;
 }
 
 function IconBtn(props: IIconBtn) {
-  const { iconSrc, linkPath, onClickFn } = props;
+  const { iconSrc, linkPath, onClickFn, toggle } = props;
+
+  const handleOnClick = (e : React.MouseEvent<HTMLButtonElement>)=>{
+    onClickFn(e)
+  }
+
   return (
-    <Link to={linkPath ?? ""}>
+    <div className={toggle ? "onBtn" : "offBtn"}>
+      {linkPath ? 
+      <Link to={linkPath}>
+        <button onClick={onClickFn} >{iconSrc ?? "버튼"}</button>
+      </Link>
+      :   
       <button onClick={onClickFn}>{iconSrc ?? "버튼"}</button>
-    </Link>
+    }</div>
+    
   );
 }
 

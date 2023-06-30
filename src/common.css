@@ -56,3 +56,14 @@
 .chatBoxRight{
     
 }
+
+.onBtn{
+  opacity: 1;
+}
+.offBtn{
+  opacity: 0.6;
+}
+.chatInputBox{
+  display: flex;
+  flex-direction: row;
+}

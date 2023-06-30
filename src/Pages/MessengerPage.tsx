@@ -1,14 +1,18 @@
 import React from "react";
-import ChatRoomList from "../Components/Organisms/ChatRoomList";
-import ChatContents from "../Components/Organisms/ChatContents";
-import SideBar from "../Components/Organisms/SideBar";
+import RoomList from "../Components/templates/RoomList";
+import ChatContents from "../Components/templates/ChatContents";
+import SideBar from "../Components/templates/SideBar";
+import ShowHideToggleFn from "../Hooks/ShowHideToggleFn";
 
 function MessengerPage() {
+
+  const {toggleState, setToggleOnOff} = ShowHideToggleFn(true)
+
   return (
     <div className="messengerPage">
-      <ChatRoomList />
-      <ChatContents />
-      <SideBar />
+      <RoomList />
+      <ChatContents toggle={toggleState} />
+      <SideBar toggle={toggleState}/>
     </div>
   );
 }

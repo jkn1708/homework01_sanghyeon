@@ -1,10 +1,7 @@
 import React from "react";
+import { IChatRoomBox } from "../../mockData";
 
-export interface IChatRoomBox {
-  imgSrc?: string;
-  name?: string;
-  recentChat?: string;
-}
+
 
 function ChatRoomBox(props: IChatRoomBox) {
   const { imgSrc, name, recentChat } = props;

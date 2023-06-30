@@ -4,7 +4,7 @@ import IconBtn from "../Molecules/IconBtn";
 import ImageBox from "../Molecules/ImageBox";
 import InputTextBox from "../Molecules/InputTextBox";
 
-function ChatRoomList() {
+function RoomList() {
   return (
     <div>
       <ImageBox />
@@ -15,4 +15,4 @@ function ChatRoomList() {
   );
 }
 
-export default ChatRoomList;
+export default RoomList;
