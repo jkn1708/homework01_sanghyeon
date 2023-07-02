@@ -1,16 +1,22 @@
-import React from "react";
-import { IChatRoomBox } from "../../mockData";
+import React, { useRef } from "react";
 
+interface IChatRoomBoxProps {
+  imgSrc?: string;
+  name?: string;
+  recentChat?: string;
+  onClickFn?: any;
+}
 
+function ChatRoomBox(props: IChatRoomBoxProps) {
+  const { imgSrc, name, recentChat, onClickFn } = props;
+  const intervalId = useRef(null);
 
-function ChatRoomBox(props: IChatRoomBox) {
-  const { imgSrc, name, recentChat } = props;
   return (
-    <div className="chatBox">
+    <div className="chatBox" ref={intervalId}>
       <div>{imgSrc ?? "이미지"}</div>
       <div>
         <div>{name ?? "아무개"}</div>
-        <div>{recentChat ?? " 최근 챗팅"}</div>
+        <div>{recentChat ?? ""}</div>
       </div>
     </div>
   );

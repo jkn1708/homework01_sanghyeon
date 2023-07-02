@@ -1,8 +1,6 @@
 import React from "react";
 import { IProfileBox } from "../../mockData";
 
-
-
 function ProfileBox(props: IProfileBox) {
   const { imgSrc, name } = props;
   return (

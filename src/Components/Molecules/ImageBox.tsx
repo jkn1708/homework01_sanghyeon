@@ -3,7 +3,7 @@ import React from "react";
 function ImageBox() {
   return (
     <div>
-      <div>이미지</div>
+      <h1>Message</h1>
     </div>
   );
 }

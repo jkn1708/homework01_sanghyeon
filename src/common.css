@@ -53,17 +53,29 @@
   border-radius: 5px;
 }
 
-.chatBoxRight{
-    
+.chatBoxRight {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.onBtn{
+.onBtn {
   opacity: 1;
 }
-.offBtn{
+.offBtn {
   opacity: 0.6;
 }
-.chatInputBox{
+.chatInputBox {
+  display: flex;
+  flex-direction: row;
+}
+.roomBox {
+  cursor: pointer;
+}
+.roomBox :hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+.makeRoomBoxs {
   display: flex;
   flex-direction: row;
 }
